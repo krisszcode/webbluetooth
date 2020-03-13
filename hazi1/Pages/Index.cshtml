@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="the_title">
+    <h1>There are your best bluetooth-speaker choices!</h1>
+</div>
+<br />
+
+<div class="speaker_list">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            text-align: left;
+            padding: 8px;
+            text-align:center;
+        }
+
+        img{
+            width:200px;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>JBL Charge 4</th>
+            <th>JBL Xtreme 2</th>
+            <th>JBL Boombox</th>
+            <th>JBL Flip 5</th>
+            <th>JBL GO 2</th>
+        </tr>
+        <tr>
+            <td><a target="_blank" href="https://www.boltx.hu/muszaki-cikkek/hordozhato-hangszoro/jbl-charge-4-szurke"><img src="~/lib/jbl4.jpg"/></a></td>
+            <td><a target="_blank" href="https://www.boltx.hu/muszaki-cikkek/hordozhato-hangszoro/jbl-xtreme-2-zold"><img src="~/lib/jblxtreme2.jpg" /></a></td>
+            <td><a target="_blank" href="https://telefoncenter.hu/jbl/2119-jbl-boombox-fekete.html"><img src="~/lib/jblboombox.jpg" /></a></td>
+            <td><a target="_blank" href="https://www.boltx.hu/muszaki-cikkek/hordozhato-hangszoro/jbl-flip-5-fekete"><img src="~/lib/jblflip5.jpg" /></a></td>
+            <td><a target="_blank" href="https://www.wincity.hu/jbl-go-2-bluetooth-hangszoro-vizhatlan-fekete-jblgo2blk-portable-bluetooth-speaker?utm_source=arukereso&utm_medium=cpp&utm_campaign=direct_link"><img src="~/lib/jblgo2.jpg" /></a></td>
+        </tr>
+    </table>
+</div>
+<br />
+<br />
+<h2>Submit your email here:</h2>
+<form method="get">
+    <input style="text" name="email"/>
+    <button>Submit</button>
+</form>
